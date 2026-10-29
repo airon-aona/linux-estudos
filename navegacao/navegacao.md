@@ -160,6 +160,18 @@ Assim como o `ls` também temos algumas opções:
 - `--help` - Exibe as opções do utilitário.
 - `--version` - Mostra as informações do utilitário.
 
+### man
+
+É a ferramenta utilizada para acessar a documentação e os manuais do sistema operacional.
+
+`man [nome_do_comando]`
+
+Tem algumas opções:
+
+- `-a` - Mostra todas as páginas para o nome definido.
+- `-f` ou `-whatis` - Apresenta apenas uma pequena descrição do comando.
+- `-k [palavra]` ou `-apropos [palavra]` - Procura nos índices do manual a palavra especificada.
+
 ---
 ## Referencias
 
