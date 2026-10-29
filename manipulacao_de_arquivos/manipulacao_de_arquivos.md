@@ -34,7 +34,7 @@ Algumas opções do comando:
 
 `mkdir teste/linux` - Cria o diretório teste e dentro dele o subdiretório linux.
 
-# cp
+### cp
 
 O comando `cp` faz cópias de arquivos e diretórios.
 
@@ -60,3 +60,9 @@ Opções do comando `cp`:
 - `cp arquivo*.txt /tmp` - O * substitui um grupo qualquer de caracteres, sem especificar qual ou quantos, pode também ser zero, esse comando copia os arquivos do diretório atual que comecem com arquivo e tem extensão txt para o diretório /tmp.
 - `cp arquivo?.txt /tmp` - O ? substitui um caractere (Qualquer caractere), esse comando copia os arquivos do diretório atual que comecem com arquivo e tenham qualquer caractere na oitava posição e tenham a extensão txt para o diretório /tmp.
 - `cp arquivo[1-3].txt /tmp` - O [] substitui um único caractere em uma faixa de valores, esse comando copia os arquivos arquivo1.txt, arquivo2.txt e arquivo3.txt, se eles existirem, para o diretório /tmp.
+
+### mv
+
+O comando `mv` move os arquivos de um diretório para outro, diferente do `cp`, o `mv` apaga os arquivos da origem após transferi-lo para a origem. O comando `mv` serve também para renomear os arquivos.
+
+
