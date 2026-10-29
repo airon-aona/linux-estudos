@@ -1,5 +1,4 @@
 # Navegação Linux
----
 
 ## Estrutura de Diretórios - Filesystem Hierarchy Standard FHS
 
@@ -106,6 +105,8 @@ Tem algumas opções:
 O comando pwd sem o ` -L ` o link simbólico é indicado, com a opção ` -P ` o pwd resolve o link simbólico indicando para o diretório original.
 
 
+
+---
 ## Referencias
 
 [Filesystem Hierarchy Standard FHS](https://www.certificacaolinux.com.br/diretorios-e-arquivos/)
