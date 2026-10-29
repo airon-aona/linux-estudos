@@ -126,7 +126,21 @@ Pode combinar as opções assim como feito em `ls -lh`, exemplos:
 
 Podemos também opções em um diretório que não é o atual utilizando `ls [opção] [caminho]`.
 
+### cd
 
+O comando ` cd ` (Change Directory) serve para navegar entre os diretórios.
+
+`cd [caminho]`
+
+Temos algumas opções:
+
+- `cd` ou `cd ~/` - Ir para o diretório home.
+- `cd /` - Ir para o diretório raiz.
+- `cd nome_do_diretorio` - Ir para um diretório filho do atual.
+- `cd ..` - Ir para o diretório pai do atual.
+- `cd ../nome_do_diretorio` - Ir para um diretório do mesmo nivel (Irmão) do atual.
+- `cd -` - Voltar para o ultimo diretório visitado antes do atual.
+- `cd [caminho completo]` - Você pode fornecer o caminho completo do diretório que quer ir.
 
 ---
 ## Referencias
