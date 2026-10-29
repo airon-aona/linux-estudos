@@ -65,4 +65,26 @@ Opções do comando `cp`:
 
 O comando `mv` move os arquivos de um diretório para outro, diferente do `cp`, o `mv` apaga os arquivos da origem após transferi-lo para a origem. O comando `mv` serve também para renomear os arquivos.
 
+`mv arquivo1 arquivo2` - Renomeia o arquivo1 para arquivo2.
+
+`mv arquivo1 /tmp` - Move o arquivo1 para o diretório  /tmp.
+
+Algumas opções do comando:
+
+- `-f` - Move o arquivo sem pedir confirmação, mesmo que o arquivo já exista um arquivo com o mesmo nome no destino.
+- `-i` - Move o arquivo mas pede permissão, caso haja um arquivo no destino com o mesmo nome.
+
+Assim como o comando `cp`, podemos usar os curingas para especificar mais de um arquivo.
+
+### rm
+
+O comando `rm` exclui um arquivo ou diretório de forma permanente.
+
+Algumas das opções do comando:
+
+- `-f` - Apaga arquivos ou diretórios a força, sem pedir permissão e ignorando, arquivos e diretórios inexistentes.
+- `-i` - Pergunta se você deseja apagar os arquivos e diretórios antes de apaga-los.
+- `-r` - Exclui diretórios e todo o conteúdo dentro deles (recursivo).
+- `-d` - Remove diretórios que estejam vazios.
+
 
