@@ -69,8 +69,18 @@ Contem arquivos acessados normalmente apenas pelo superusuario, essenciais para 
 
 ### /tmp
 
-diretório de arquivos temporarios, em algumas distribuições esse diretório é montado em memória.
+Diretório de arquivos temporarios, em algumas distribuições esse diretório é montado em memória.
 
 ### /usr
 
+Arquivos pertencentes ao usuário, seu conteúdo pode ser distribuído via rede para diversos sistemas da mesma distribuição sem problemas, é a segunda maior hierarquia de diretórios e tem alguns subdiretórios:
+
+- /usr/bin - Ferramentas e comandos auxiliares do usuário, interpretadores de programação como perl, python, etc.
+- /usr/include - Cabeçalhos e bibliotecas da linguagem C.
+- /usr/lib e /usr/lib64 - Bibliotecas de aplicações de usuários.
+- /usr/libexec - Binarios que não são executados normalmente por usuários.
+- /usr/local - Hierarquia de diretórios para instalação de aplicativos locais do sistema. Possui vários subdiretórios como: bin, etc, include, lib, man, sbin, share e src.
+- /usr/sbin - Inclui ferramentas não essenciais, mas exclusivas da administração do sistema.
+- /usr/share - São arquivos de somente leitura de arquitetura independente, podem ser compartilhados por distribuições de linux iguais, independente da arquitetura. O diretório man por exemplo é onde ficam os manuais dos comandos e fica em /usr/share.
+- /usr/src - Pode conter arquivos de código fonte de programa.
 
