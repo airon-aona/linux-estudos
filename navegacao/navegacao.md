@@ -94,3 +94,15 @@ Arquivos pertencentes ao usuário, seu conteúdo pode ser distribuído via rede 
 - /var/opt - Mantém os arquivos variáveis das aplicações.
 - /var/spool - Mantém dados de processos que mantém filas, como impressão e saída e-mail.
 - /var/tmp - Mantém os arquivos temporários das aplicações que precisam ser mantidos entre o reboot do sistema.
+
+## Comandos
+
+### pwd
+
+O comando ` pwd ` (Printing Working Directory) informa o diretório absoluto corrente, mostra o caminho completo desde a raiz do sistema.
+Tem algumas opções:
+
+- ` -L ` ou ` --logical ` - Retorna o conteúdo da variável PWD mesmo se conter links simbólicos.
+- ` -P ` ou ` --physical ` - Evita todos os links simbólicos.
+
+O comando pwd sem o ` -L ` o link simbólico é indicado, com a opção ` -P ` o pwd resolve o link simbólico indicando para o diretório original.
