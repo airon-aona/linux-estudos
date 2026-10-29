@@ -142,6 +142,24 @@ Temos algumas opções:
 - `cd -` - Voltar para o último diretório visitado antes do atual.
 - `cd [caminho completo]` - Você pode fornecer o caminho completo do diretório a que quer ir.
 
+### tree
+
+O comando ` tree ` tem a mesma função do comando ` ls `, mudando apenas o modo de visualização, o ` tree ` mostra o conteúdo em formato de árvore visual.
+
+Ele não vem instalado na maioria das distribuições Linux, mas pode ser instalado utilizando o gerenciador de pacotes do sistema.
+
+- `tree` - Mostra o conteúdo do diretório atual.
+- `tree [caminho]` - Mostra o conteúdo do diretório especificado.
+
+Assim como o `ls` também temos algumas opções:
+
+- `-a` - Lista todos os arquivos inclusive os arquivos ocultos.
+- `-d` - Lista somente os subdiretórios.
+- `-f` - Exibe o caminho completo dos arquivos.
+- `-p` - Exibe as permissões dos arquivos.
+- `--help` - Exibe as opções do utilitário.
+- `--version` - Mostra as informações do utilitário.
+
 ---
 ## Referencias
 
