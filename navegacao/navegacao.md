@@ -12,7 +12,7 @@ Contém comandos utilizados pelo usuário e pelo administrador.
 
 ### /boot
 
-Arquivos necessários para a inicialização do sistema. Imagem do kernel, initramfs e alguns arquivos do Grub. Contém tudo o que é necessário para iniciar o sistema, exceto arquivos de configuração e gerenciador de boot. Inclui o setor master de carga (Master Boot Sectors) e arquivos de mapa de setor
+Arquivos necessários para a inicialização do sistema, incluindo a imagem do kernel Linux (vmlinuz) e o initramfs. Contém o gerenciador de boot (como o GRUB), seus arquivos de configuração (como o grub.cfg) e os arquivos de mapa de setores necessários para carregar o sistema operacional.
 
 ### /dev
 
