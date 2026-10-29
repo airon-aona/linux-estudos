@@ -172,6 +172,12 @@ Tem algumas opções:
 - `-f` ou `-whatis` - Apresenta apenas uma pequena descrição do comando.
 - `-k [palavra]` ou `-apropos [palavra]` - Procura nos índices do manual a palavra especificada.
 
+### --help
+
+Exibe um resumo do uso, a sintaxe básica e as principais opções de um comando diretamente no terminal.
+
+`[comando] --help` - Pode apresentar variações como -h ou -help
+
 ---
 ## Referencias
 
