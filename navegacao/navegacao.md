@@ -104,10 +104,35 @@ Tem algumas opções:
 
 O comando pwd sem o ` -L ` o link simbólico é indicado, com a opção ` -P ` o pwd resolve o link simbólico indicando para o diretório original.
 
+### ls
+
+O comando ` ls ` serve para listar arquivos e diretórios em algum lugar do sistema:
+
+- ` ls ` - lista o conteúdo do diretório atual.
+- ` ls [caminho] ` - lista o conteúdo do diretório especificado.
+
+O ` ls ` aceita algumas opções:
+
+- ` -l ` - Exibe em formato de lista detalhada, mostra permissões, numero de links, tamanho em bytes, dono, grupo, data de modificação e nome.
+- ` -a ` - Mostra todos os arquivos, incluindo os arquivos ocultos (arquivos que começam com um ponto, como `.bashrc`).
+- ` -h ` - Torna os tamanhos dos arquivos fáceis de ler (KB, MB, GB), é usado junto com o `-l` (`ls -lh`).
+- ` -t ` - Ordena os arquivos pela data de modificação, do mais recente ao mais antigo.
+- ` -s ` - Ordena os arquivos pelo tamanho do maior para o menor.
+
+Pode combinar as opções assim como feito em `ls -lh`, exemplos:
+
+- `ls -la` - Lista todos os arquivos inclusive os ocultos em lista detalhada.
+- `ls -lah` - Lista todos os arquivos inclusive os ocultos em lista de talhada com os tamanhos legiveis.
+
+Podemos também opções em um diretório que não é o atual utilizando `ls [opção] [caminho]`.
+
 
 
 ---
 ## Referencias
 
 [Filesystem Hierarchy Standard FHS](https://www.certificacaolinux.com.br/diretorios-e-arquivos/)
+
 [Comando PWD](https://www.certificacaolinux.com.br/comando-linux-pwd/)
+
+[Comando ls](https://guialinux.uniriotec.br/ls/)
