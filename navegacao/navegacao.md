@@ -84,3 +84,13 @@ Arquivos pertencentes ao usuário, seu conteúdo pode ser distribuído via rede 
 - /usr/share - São arquivos de somente leitura de arquitetura independente, podem ser compartilhados por distribuições de linux iguais, independente da arquitetura. O diretório man por exemplo é onde ficam os manuais dos comandos e fica em /usr/share.
 - /usr/src - Pode conter arquivos de código fonte de programa.
 
+### /var
+
+É guardada informações variáveis do sistema, como logs, arquivos de e-mail, etc. Possui subdiretórios importantes:
+- /var/cache - Mantém informações de cache das aplicações como calculos, etc.
+- /var/lib - Mantém informações de estado das aplicações.
+- /var/log - Mantém informações de log do sistema, como messages, lastlog, wtmp.
+- /var/mail - Mantém o diretório de contas de e-mail dos usuários.
+- /var/opt - Mantém os arquivos variáveis das aplicações.
+- /var/spool - Mantém dados de processos que mantém filas, como impressão e saída e-mail.
+- /var/tmp - Mantém os arquivos temporários das aplicações que precisam ser mantidos entre o reboot do sistema.
