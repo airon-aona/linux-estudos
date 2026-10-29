@@ -50,4 +50,27 @@ Diretório vazio, usado como ponto de montagem de dispositivos na máquina, cdro
 ### /proc
 
 Informações do kernel e dos processos. é um pseudo-filesystem e não existe realmente no disco. Abstrações e descritores de tudo quanto é há no kernel do sistema. É possivel não só ler os dados, mas fazer alterações do kernel, alterando o conteudo do /proc. Seria o "registro" do sistema.
- 
+
+### /opt
+
+Ficam instalados programas que não pertencentes a distribuição linux.
+
+### /root
+
+Diretório do superusuario root, pode ou não existir dependendo da distribuição.
+
+### /run
+
+Armazena dados desde a ultima carga, é zerado ou apagado, no inicio do processo de boot.
+
+### /sbin
+
+Contem arquivos acessados normalmente apenas pelo superusuario, essenciais para a administração da máquina.
+
+### /tmp
+
+diretório de arquivos temporarios, em algumas distribuições esse diretório é montado em memória.
+
+### /usr
+
+
