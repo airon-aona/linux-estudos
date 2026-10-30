@@ -118,6 +118,51 @@ Para numerar as linhas dos arquivo basta usar o parâmetro `n`.
 
 `cat -n arquivo1.txt` - Exibe o numero e o conteúdo de cada linha do arquivo.
 
-### 
+### less
+
+Permite fazer a paginação de arquivos ou da entrada padrão.
+
+Diferente dos editores pesados ou do comando `cat`, o `less` não precisa carregar o arquivo inteiro na memória antes de abrir, ideal para arquivos grandes como logs do sistema.
+
+Pode ser usado para redirecionar a saída de um comando usando o pipe ("|").
+
+`ls | less` - Faz com que a saída do diretório corrente seja paginada pelo aplicativo less.
+
+Algumas opções para esse comando.
+
+- `+` - Se a opção começa com esse sinal, então a opção é usada como um comando inicial para o aplicativo less
+- `+num` - Mostra o arquivo a partir da linha num.
+- `-N` - Numera as linhas do arquivo.
+- `-f` ou `--force` - Força a abertura de um arquivo não regular.
+- `+F` - Continua indefinidamente tentando ler caracteres no final de um arquivo, assume que o arquivo esta crescendo. O comportamento é semelhante ao comando `tail -f`.
+- `+G` - Posiciona no final do arquivo.
+
+### head
+
+Serve para exibir as primeiras linhas de um arquivo de texto, ou de um comando no terminal.
+
+Algumas opções do comando `head`:
+
+- `-c[num[bkm]]` - Mostra os num primeiros bytes, Kbytes ou Mbytes do arquivo, o padrão é bytes.
+- `-n[num]` - Mostra as num primeiras linhas do arquivo, o padrão é 10.
+- `-v` - Mostra cabeçalho sobre o arquivo.
+
+`head -c 200 teste.txt` - Mostra os primeiros 200 bytes do arquivo.
+
+`head -n 20 teste.txt` - Mostra as primeiras 20 linhas do arquivo.
+
+### tail
+
+Ao contrario do `head`, o `tail` mostra as ultimas linhas do arquivo, pode ser util para monitoramento de logs e depuração.
+
+- `-c[num[bkm]]` - Mostra os numultimos bytes, Kbytes ou Mbytes do arquivo, o padrão é bytes.
+- `-n[num]` - Mostra as num ultimas linhas do arquivo, o padrão é 10.
+- `-f` - Continua indefinidamente tentando ler caracteres no final de um arquivo, assumindo que o arquivo esta crescendo.
+
+`tail -n 20 teste.txt` - Mostra as ultimas 20 linhas do arquivo teste.txt.
+
+`tail -f /var/log/syslog` - Examina um arquivo que esta constantemente sendo atualizado, para sair basta usar CTRL + C.
+
+## Curingas
 
 
