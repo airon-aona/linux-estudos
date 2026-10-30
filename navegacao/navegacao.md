@@ -178,6 +178,48 @@ Exibe um resumo do uso, a sintaxe básica e as principais opções de um comando
 
 `[comando] --help` - Pode apresentar variações como -h ou -help
 
+## Caminhos Absolutos e Caminhos Relativos
+
+O caminho absoluto é a especificação da localização de um arquivo ou diretório a partir do diretório raiz (/). É o caminho inteiro até chegar no diretório ou arquivo desejado.
+
+O caminho relativo é relacionado ao diretório de trabalho atual (pwd)
+
+Suponha que estamos em /var/log, e queremos ir para /var/log/kernel:
+
+`pwd /var/log cd kernel` - Utilizando o caminho relativo.
+
+`cd /var/log/kernel` - Utilizando o caminho absoluto.
+
+Todo diretório Linux, possui dois arquivos especiais, o ".", serve para referenciar o diretório corrente, e o "..", serve para referenciar o diretório anterior.
+
+``` pwd /home/exemplo ``` - Mostra o diretório de trabalho, no caso é o /home/exemplo.
+
+```
+ls 
+	bin
+	public_html
+
+```
+
+A cima listamos o conteúdo de /home/exemplo, se quisermos listar o conteúdo de public_html, podemos utilizar o caminho relativo, usando o "."
+
+```ls ./public_html```
+
+Pode também listar o conteúdo de /home utilizando o "..":
+
+```
+ls ../
+	exemplo
+	exemplo1
+	exemplo2
+```
+
+O diretório especial ".." pode ser usado para navegar entre os diretórios utilizando o `cd`
+
+`cd ..$ pwd/home`
+
+`cd ..$ pwd/`
+
 ---
 ## Referencias
 
