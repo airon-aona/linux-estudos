@@ -35,5 +35,39 @@ O comando `grep` pode ter algumas opções:
 
 `greo -e ^DESCRIPTION$ -e all arquivo.txt` - Pode usar o apção `-e` para definir mais de um padrão, nesse exemplo procura uma linha que só tenha DESCRIPTION e a string "all" em qualquer posição.
 
+### find
+
+O comando `find` busca um arquivo ou diretório no sistema de arquivos, dependendo do tamanho do sistema de arquivos, esse comando pode demorar.
+
+Você deve indicar um ponde de inicio, "/", para iniciar no diretório raiz, "./" para iniciar no diretório corrente, e assim por diante.
+
+Sintaxe básica `find [caminho] [expressão]`
+
+O `find` permite uma infinidade de expressões.
+
+`find / -name teste.txt -type f` - Procura pelo arquivo teste.txt a partir do diretório raiz (indicado pelo "/"), do tipo arquivo (indicado pelo "f").
+
+`find . -name '*.txt'` - Procura todos os arquivos com extenção .txt no diretório atual.
+
+`find . -iname usuarios -type d` - Procura por diretórios com o nome usuarios independente se esta escrito com maiusculas ou minusculas, a partir do diretório atual.
+
+`find -type f -not -name '*.html'` - Procura por arquivos que não terminam com .html a partir do diretório atual.
+
+O `find` permite executar comandos com a lista de arquivos que ele encontrar:
+
+`find . -type f -name '*.mp3' -exec cp {} /tmp/ \` - Copia todos os arquivos com extensão .mp3, a partir do diretório atual, para o diretório /tmp.
+
+`find . -type d -name BACKUP -exec rm -r {} \` - Apaga todos os diretórios BACKUP a a partir do diretório corrente.
+
+`find . -mtime -7 -type f` - Procura os arquivos modificados nos últimos 7 dias.
+
+`find . -mtime +5` - Procura arquivos editados antes de 5 dias.
+
+`find /backup/ -type f -mtime +15 -exec rm -f {} \` - Apaga os arquivos de /backup com mais de 15 dias.
+
+`find -newer arquivo.txt` - Procura por aquivos mais novos que arquivo.txt.
+
+`find / -size +50M` - Procura por arquivos com tamanho maior que 50mb.
+
 
 
