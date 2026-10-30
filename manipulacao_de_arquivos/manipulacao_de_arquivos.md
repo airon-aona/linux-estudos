@@ -87,4 +87,37 @@ Algumas das opções do comando:
 - `-r` - Exclui diretórios e todo o conteúdo dentro deles (recursivo).
 - `-d` - Remove diretórios que estejam vazios.
 
+`rm arquivo.txt` - Apaga o arquivo.txt.
+`rm -fr teste` - Apaga o diretório teste e todo seu conteúdo, sem pedir permissão.
+
+Assim como os comandos anteriores também pode usar os curingas para especificar mais de um arquivo.
+
+### cat
+
+O comando cat (de concatenate) é usado para exibir, criar e concatenar o conteúdo de arquivos de texto.
+
+`cat arquivo1 arquivo2` - Mostra na tela o conteúdo do arquivo1 e arquivo2.
+
+Para marar a rolagem do conteúdo na tela e permitir a navegação use o comando `more` ou `less` junto com o pipe ("|").
+
+`cat arquivo1 arquivo2 | more` ou `cat arquivo1 arquivo2 | less`
+
+Para concatenar vários arquivos temos que usar o redirecionador de saída ">".
+
+`cat arq1 arq2 arq3 > arquivo_concatenado` - Junta o arq1, arq2 e arq3 e cria o arquivo_concatenado, se já existe um arquivo com esse nome, esse arquivo é deletado e criado novamente.
+
+Para inserir um arquivo no final de um arquivo existente utiliza o redirecionador de saída ">>".
+
+`cat arq4 >> arquivo_concatenado` - Adiciona o arquivo arq4 no final de arquivo_concatenado.
+
+É possível usar o redirecionador de saída ">" para criar um arquivo.
+
+`cat > teste` - Cria o arquivo teste, após isso, basta digitar as linhas do arquivo (tecle ENTER no final das linhas e CRTRL + D no final do arquivo).
+
+Para numerar as linhas dos arquivo basta usar o parâmetro `n`.
+
+`cat -n arquivo1.txt` - Exibe o numero e o conteúdo de cada linha do arquivo.
+
+### 
+
 
