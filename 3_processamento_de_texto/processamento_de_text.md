@@ -69,5 +69,35 @@ O `find` permite executar comandos com a lista de arquivos que ele encontrar:
 
 `find / -size +50M` - Procura por arquivos com tamanho maior que 50mb.
 
+### wc
+
+O comando `wc` conta linha, palavras, bytes, caracteres de um arquivo.
+
+Algumas opções são:
+
+- `-c` - Conta bytes.
+- `-l` - Conta linhas.
+- `-L` - Mostra o comprimento da linha mais longa
+- `-m` - Conta caracteres.
+- `-w` - Conta palavras.
+
+Como exemplo vamos pegar o arquivo "exemplo" com o seguinte conteúdo:
+
+```
+linha 1
+
+linhá 2
+
+o fim
+```
+
+`wc exemplo` retorna a seguinte resposta `5 6 25 exemplo` - O arquivo exemplo tem 5 linhas, 6 palavras (2 por linha não vazia) 25 bytes (quantidade de bytes por linha: 8, 1, 9, 1 e 6), note que é contado o byte de fim de linha (\0), e o caractere "á", da terceira linha, tem 2 bytes, isso pode ser verificado com o comando `wc -m exemplo` que vai mostra que o arquivo exemplo tem 24 caracteres.
+
+- Caso não seja fornecido uma opção, como vimos logo a cima, o `wc` informa o numero de linhas, de palavras e de bytes do arquivo especificado.
+- Caso não seja informado um arquivo o `wc` permite que o usuário digite as linhas de entrada padrão, separando as linhas com ENTER e o fim do arquivo com CTRL + D, e em seguida faz a contagem.
+
+
+
+
 
 
