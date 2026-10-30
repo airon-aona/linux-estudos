@@ -37,4 +37,5 @@ Principais atalhos de teclados para usar no terminal Linux.
 ---
 
 [atalhos terminal](https://www.certificacaolinux.com.br/atalhos-de-teclado-que-todo-sysadmin-precisa-saber/)
+
 [atalhos terminal 2](https://keycombiner-com.translate.goog/collections/terminal/?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc)
