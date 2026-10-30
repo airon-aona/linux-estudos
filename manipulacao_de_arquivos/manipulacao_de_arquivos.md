@@ -163,6 +163,42 @@ Ao contrario do `head`, o `tail` mostra as ultimas linhas do arquivo, pode ser u
 
 `tail -f /var/log/syslog` - Examina um arquivo que esta constantemente sendo atualizado, para sair basta usar CTRL + C.
 
-## Curingas
+## Caracteres Curingas
 
+Como em alguns comandos acima, vimos que podemos usar alguns caracteres para manipular um conjunto de arquivos, são os chamados Caracteres curingas (Wildcards / Globbing)
+
+Exemplos de curingas:
+
+- `*` - Substitui um conjunto de caracteres, podendo ser zero.
+- `?` - Substitui um único caractere.
+- `[]` - Substitui caracteres especificados dentro dos colchetes.
+- `{}` - Substitui uma sequencia de caracteres, especificados dentro de chaves.
+
+Exemplos:
+
+Um diretório com os seguintes arquivos:
+
+exemplo1.txt
+exemplo2.txt
+exemplo3.txt
+exemplo4.txt
+exemplo5.txt
+exemplo10.txt
+exemplo20.txt
+
+`rm exemplo*.txt` ou `rm exemplo*` - Remove todos os arquivos do diretório.
+
+`rm exemplo?.txt` - Remove apenas os 5 primeiros arquivos (exemplo1.txt à exemplo5.txt).
+
+`rm exemplo[2-4].txt` - Remove os arquivos exemplo2.txt, exemplo3.txt e exemplo4.txt.
+
+`rm exemplo[2,4].txt` - Remove apenas o exemplo2.txt e exemplo4.txt
+
+`rm exemplo[^2,4].txt` - O caractere "^" significa exclusão, então exclui qualquer outro caractere, se não os especificados, excluindo assim o exemplo1.txt, exemplo3.txt e exemplo5.txt, note que ele mantem o exemplo10.txt e exemplo20.txt, pois o curinga só substitui 1 caractere.
+
+`rm exemplo[^2,4]*.txt` - Remove além dos arquivos mostrados no exemplo a cima, os arquivos exemplo10.txt e exemplo20.txt.
+
+`rm exemplo{10,20}.txt` - Remove apenas os arquivos exemplo10.txt e exemplo20.txt.
+
+`rm exemplo{[1-3],10}.txt` - Note que podemos combinar vários curingas, nesse exemplo iremos deletar os arquivos exemplo1.txt, exemplo2.txt, exemplo3.txt e exemplo10.txt.
 
